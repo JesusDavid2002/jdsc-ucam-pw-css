@@ -1,62 +1,71 @@
 body{
     margin: 0;
-    background-color: grey;
+    background-color: rgb(179, 179, 179);
 }
 
+/*CONTENEDOR GLOBAL*/
 #container{
     margin: 10px;
     width: 98vw;
     height: 97vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    border: 1px solid white;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr;
+    border: 1px solid rgb(226, 226, 226);
 }
 
-header{
+/*HEADER Y FOOTER*/
+header, aside, footer {
+    background-color: rgb(236, 234, 234);
+}
+
+header, footer{
     width: 100%;
     text-align: center;
     grid-column: 1/5;
+    color:rgb(184, 184, 184);
 }
 
-header, aside {
-    background-color: rgb(179, 179, 179);
-}
-
+/*ARTICULOS LATERALES*/
 aside {
-    width: 100%;
+    width: 99.9%;
     grid-column: 4/5;
-    border: 1px solid white;
+    grid-row: 2/5;
+    border: 1px solid rgb(226, 226, 226);
     border-collapse: collapse;
+    font-size: large;
 }
+
 aside nav{
     padding: 5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: 1px solid white;
+    border: 1px solid rgb(226, 226, 226);
     border-collapse: collapse;
 }
 
 aside article{
     padding: 5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: 1px solid white;
+    border: 1px solid rgb(226, 226, 226);
     border-collapse: collapse;
 }
 
+aside h3,aside h4,aside p{
+    padding-left: 30px;
+}
+
+aside a{
+    color: rgb(158, 157, 157);
+}
+
+
+/*ARTICULOS*/
 section {
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(247, 247, 247);
     grid-column: 1/4;
     grid-row: 2/5;
 }
 
 section article.content{
-    border: 1px solid white;
+    border: 1px solid rgb(226, 226, 226);
     padding: 20px;
-}
-
-footer{
-    grid-column: 1/3;
 }
